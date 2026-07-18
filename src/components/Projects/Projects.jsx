@@ -5,6 +5,8 @@ import Image from "next/image";
 import ProjImg1 from "./../../assets/projects/p_1.JPG";
 import ProjImg2 from "./../../assets/projects/p1.JPEG";
 import ProjImg3 from "./../../assets/projects/p-2.JPG";
+import ProjImg4 from "./../../assets/projects/p4.png";
+import ProjImg5 from "./../../assets/projects/p5.jpg";
 
 const ProjData = [
   {
@@ -12,6 +14,7 @@ const ProjData = [
     title: "Prescripto Doctors App",
     img: ProjImg1,
     link: "https://prescripto-doctors-frontend-only.netlify.app/",
+    link2:"https://github.com/RehmanGhoto97/Prescripto-web-app-frontend-only.git",
     descr:
       "A UI clone of the Prescripto Doctors App built to explore responsive design principles and enhance user interaction.",
     delay: 1.2,
@@ -20,7 +23,8 @@ const ProjData = [
     id: 2,
     title: "UI Clone Web Page",
     img: ProjImg2,
-    link: "#",
+    link: "https://food-delivery-webapp97.netlify.app/",
+    link2:"https://github.com/RehmanGhoto97/food-delivery-web-app.git",
     descr:
       "Developed a responsive UI clone to improve skills in design frameworks and CSS layout techniques.",
     delay: 1.6,
@@ -30,8 +34,29 @@ const ProjData = [
     title: "Hotel Management System",
     img: ProjImg3,
     link: "https://hotel-management-system-mini.netlify.app/",
+    link2:"https://github.com/RehmanGhoto97/Hotel-Management-System.git",
     descr:
       "Created a Hotel Management System with React.js and modern UI frameworks, featuring a sleek, responsive layout.",
+    delay: 2,
+  },
+  {
+    id: 4,
+    title: "School Management System",
+    img: ProjImg4,
+    link: "https://owe-we97.vercel.app/",
+    link2:"https://github.com/ourworldofeducation-owe/owe-frontend.git",
+    descr:
+      "Built a full-stack School Management System using React.js, Node.js, Supabase, and Redux Toolkit with secure authentication, role- based access control, and separate Admin and Student dashboards.",
+    delay: 2,
+  },
+    {
+    id: 5,
+    title: "Tic Tac Toe Game",
+    img: ProjImg5,
+    link: "https://tic-tac-toe-game-by-rehman.netlify.app/",
+    link2:"https://github.com/RehmanGhoto97/tic-tac-toe-game-reactjs.git",
+    descr:
+      "A modern take on the classic game built with React.js and vanilla CSS. The application uses React Context API for efficient state management, delivering a responsive and interactive two-player experience.",
     delay: 2,
   },
 ];
@@ -88,7 +113,7 @@ const Projects = () => {
                     Live
                   </button>
                 </a>
-                <a>
+                <a arget="_blank" href={proj.link2}>
                   <button className="btn">View Code</button>
                 </a>
               </div>
