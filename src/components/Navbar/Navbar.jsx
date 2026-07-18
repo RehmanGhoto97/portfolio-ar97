@@ -8,7 +8,7 @@ import ResponsiveMenu from "./ResponsiveMenu";
 export const navLinks = [
   {
     id: 1,
-    title: "Home",
+    title: "Homeee",
     link: "/",
   },
   {
